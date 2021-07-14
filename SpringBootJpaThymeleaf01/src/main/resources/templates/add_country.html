@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:th="http://www.w3.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Country</title>
+</head>
+<body>
+	<div align="center">
+		<h1>Add new Country</h1>
+		<br>
+		<form action="#" th:action="@{/save}" th:object="${country}" >
+			<table border="0" cellpadding="10">
+				<tr>
+					<td>Country Name:</td>
+					<td><input type="text" th:field="*{country}" /></td>
+				</tr>
+				<tr>
+					<td>Currency :</td>
+					<td><input type="text" th:field="*{currency}" /></td>
+				</tr>
+				<tr>
+					<td>Population:</td>
+					<td><input type="text" th:field="*{population}" /></td>
+				</tr>
+				<tr>
+					<td>Capital ciyt:</td>
+					<td><input type="text" th:field="*{capitalCity}" /></td>
+				</tr>
+				<tr>
+					<td colspan="2"><button type="submit">save</button></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+
+</body>
+</html>
